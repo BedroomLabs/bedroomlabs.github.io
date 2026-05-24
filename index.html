@@ -11,65 +11,76 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" aria-label="Bedroom Labs">
-      <a class="brand-lockup" href="#top" aria-label="Bedroom Labs home">
-        <img src="graphics/BL_logo.png" alt="" class="brand-mark">
-        <span>Bedroom Labs</span>
+    <header class="topbar" aria-label="Bedroom Labs">
+      <a class="brand" href="#" aria-label="Bedroom Labs home">
+        <img src="graphics/BL_logo.png" alt="" class="brand-logo">
+        <span class="brand-text">
+          <strong>Bedroom Labs</strong>
+          <span>Independent AI Systems Lab</span>
+        </span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#overview">Overview</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#contact">Contact</a>
+      <nav class="external-links" aria-label="External links">
+        <a href="#" aria-label="Bedroom Labs GitHub placeholder">GitHub</a>
+        <a href="#" aria-label="Bedroom Labs Discord placeholder">Discord</a>
       </nav>
     </header>
 
-    <main id="top" class="page-shell">
-      <section class="hero" aria-labelledby="hero-title">
-        <figure class="banner-frame">
-          <img src="graphics/BL_banner.png" alt="Bedroom Labs banner" class="hero-banner">
+    <main class="dashboard" aria-label="Bedroom Labs command center">
+      <section class="hero-grid">
+        <figure class="panel banner-panel">
+          <img src="graphics/BL_banner.png" alt="Bedroom Labs banner" class="banner-image">
         </figure>
 
-        <div class="identity-strip">
-          <div class="identity-cell">
-            <img src="graphics/BL_logo_main.png" alt="" class="identity-mark">
-            <div>
-              <p class="eyebrow">Independent AI systems lab.</p>
-              <h1 id="hero-title">Bedroom Labs</h1>
-            </div>
-          </div>
-          <p class="systems-line">Continuity-first local intelligence systems.</p>
+        <aside class="panel mission-panel" aria-label="Mission">
+          <img src="graphics/BL_logo_main.png" alt="" class="mission-seal">
+          <p class="kicker">Independent AI Systems Lab</p>
+          <h1>Continuity-first local intelligence systems.</h1>
+          <div class="rule" aria-hidden="true"></div>
           <p class="motto">&ldquo;The impossible is just a problem that hasn&rsquo;t been solved yet.&rdquo;</p>
-        </div>
+          <a class="contact-link" href="mailto:bedroomlabs@proton.me">bedroomlabs@proton.me</a>
+        </aside>
       </section>
 
-      <section class="overview-grid" id="overview" aria-label="Lab overview">
-        <article class="overview-card">
-          <span>Origin</span>
-          <h2>Stream bot &rarr; memory &rarr; continuity stack</h2>
-          <p>Started with live chat presence and became a runtime problem.</p>
+      <section class="card-grid" aria-label="Lab overview">
+        <article class="panel info-card">
+          <span class="card-icon icon-origin" aria-hidden="true"></span>
+          <div>
+            <p class="kicker">Origin</p>
+            <h2>Stream bot &rarr; memory &rarr; continuity stack</h2>
+            <p>Started with live chat presence and became a runtime problem.</p>
+          </div>
         </article>
-        <article class="overview-card">
-          <span>Principle</span>
-          <h2>Restart &ne; Reset</h2>
-          <p>Continuity is a system property, not a session decoration.</p>
+
+        <article class="panel info-card">
+          <span class="card-icon icon-loop" aria-hidden="true"></span>
+          <div>
+            <p class="kicker">Principle</p>
+            <h2>Restart &ne; Reset</h2>
+            <p>Continuity is a system property, not a session decoration.</p>
+          </div>
         </article>
-        <article class="overview-card">
-          <span>Architecture</span>
-          <h2>APE + PSNA + Burrow + BL Runtime</h2>
-          <p>A compact stack for persona, archive, continuity, and orchestration.</p>
+
+        <article class="panel info-card">
+          <span class="card-icon icon-stack" aria-hidden="true"></span>
+          <div>
+            <p class="kicker">Architecture</p>
+            <h2>APE + PSNA + Burrow + BL Runtime</h2>
+            <p>A compact stack for persona, archive, continuity, and orchestration.</p>
+          </div>
         </article>
-        <article class="overview-card">
-          <span>Focus</span>
-          <h2>Local-first persistent AI systems</h2>
-          <p>Memory infrastructure, AI presence, runtime validation, and testing.</p>
+
+        <article class="panel info-card">
+          <span class="card-icon icon-focus" aria-hidden="true"></span>
+          <div>
+            <p class="kicker">Focus</p>
+            <h2>Local-first persistent AI systems</h2>
+            <p>Memory infrastructure, AI presence, runtime validation, and testing.</p>
+          </div>
         </article>
       </section>
 
-      <section class="architecture-strip" id="architecture" aria-labelledby="architecture-title">
-        <div class="strip-heading">
-          <span>Architecture Vocabulary</span>
-          <h2 id="architecture-title">Working terms for continuity-first systems.</h2>
-        </div>
+      <section class="panel vocab-panel" aria-labelledby="vocab-title">
+        <p class="kicker" id="vocab-title">Architecture Vocabulary</p>
         <dl class="vocab-grid">
           <div>
             <dt>APE</dt>
@@ -85,24 +96,23 @@
           </div>
           <div>
             <dt>Burrow</dt>
-            <dd>continuity/runtime engine</dd>
+            <dd>continuity / runtime engine</dd>
           </div>
           <div>
             <dt>BL Runtime</dt>
-            <dd>orchestration/runtime layer</dd>
+            <dd>orchestration / runtime layer</dd>
           </div>
         </dl>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <div>
-        <strong>Bedroom Labs</strong>
-        <p>&ldquo;The impossible is just a problem that hasn&rsquo;t been solved yet.&rdquo;</p>
-      </div>
-      <nav aria-label="Footer">
-        <a href="#" aria-label="Bedroom Labs GitHub placeholder">GitHub</a>
-        <a href="#" aria-label="Bedroom Labs Discord placeholder">Discord</a>
+    <footer class="footer">
+      <span>Bedroom Labs</span>
+      <span class="footer-rule" aria-hidden="true"></span>
+      <p>&ldquo;The impossible is just a problem that hasn&rsquo;t been solved yet.&rdquo;</p>
+      <nav aria-label="Footer links">
+        <a href="#">GitHub</a>
+        <a href="#">Discord</a>
       </nav>
     </footer>
   </body>
